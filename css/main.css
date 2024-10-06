@@ -1,0 +1,81 @@
+.header-wrapper {
+  position: sticky;
+  top: 0.1px;
+  margin-top: 0.1px;
+  height: 100px;
+  background-color: var(--text-white);
+  color: var(--background_black);
+}
+
+body {
+  height: 200vh;
+}
+
+.header-list {
+  gap: 16px;
+  list-style-type: none;
+  list-style: none;
+}
+
+.ad {
+  height: 600px;
+}
+.ad-item-img-wrapper {
+  height: 300px;
+}
+.ackga {
+  position: absolute;
+
+  width: 150px;
+  height: 200px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  overflow: hidden;
+}
+.ad-item-container {
+  width: 300px;
+  height: 600px;
+}
+.jams {
+  object-fit: fill;
+  width: 200px;
+  height: 300px;
+  /* transform: translateX(+25%); */
+}
+/*  원래 이미지와 글을 담고 있는 wrappper 를 hover 하면 img는 축소  p태그는 underline하려 */
+.ad-item-img-wrapper:hover > img {
+  /* .ad-item-container:hover는 왜 안됨? */
+  transform: scale(0.8);
+  cursor: pointer;
+  transition: transform 0.4s ease-out;
+  font: underline;
+}
+
+.ad-item-p {
+  position: absolute;
+  bottom: 50px;
+}
+.ad-item-container:hover > .ad-item-p {
+  text-decoration: underline;
+}
+.ad-item-container:hover {
+  background-color: hotpink;
+}
+main {
+  background-color: var(--background-pink);
+}
+
+.website {
+  font-size: 900px;
+}
+
+a:link,
+a:visited {
+  background-color: #ffa500;
+  color: maroon;
+  padding: 75px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
