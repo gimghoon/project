@@ -1,0 +1,27 @@
+:root {
+  --header-background-color: #f6f6eb;
+  --navy: #11284b;
+  --strong-blue: #381fd1;
+  --background-white: #ffffff;
+  --grey-blue: #f3f2fc;
+}
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-between-center {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.relative {
+  position: relative;
+}
+
+.align-items {
+  align-items: center;
+}
